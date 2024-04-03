@@ -36,6 +36,8 @@ data/
     └── ...
 ```
 
+🔑 **Nota**
+
 Es importante tener en cuenta que esta estructura está
 diseñada para trabajar localmente. En el caso de trabajar en la nube,
 se recomienda almacenar los datos en una base de datos o *data lake*, como Amazon S3, Google Cloud Storage, o Azure Data Lake Storage,
