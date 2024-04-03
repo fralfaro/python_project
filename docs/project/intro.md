@@ -18,4 +18,3 @@
    - **Conclusiones Clave:** Resume los principales resultados o hallazgos del proyecto. Esto puede incluir métricas de rendimiento, insights importantes o conclusiones extraídas del análisis.
    - **Lecciones Aprendidas:** Comparte cualquier lección importante que hayas aprendido durante el desarrollo del proyecto, como desafíos superados, técnicas exitosas o áreas para mejorar en proyectos futuros.
    - **Próximos Pasos:** Sugiere posibles direcciones futuras para el proyecto, como mejoras adicionales, áreas de investigación adicionales o aplicaciones potenciales en el mundo real.
-

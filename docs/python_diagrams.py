@@ -9,7 +9,7 @@ from diagrams.azure.security import KeyVaults
 from diagrams.azure.storage import BlobStorage
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     with Diagram("Azure Data Science Workflow", show=False) as diagram:
         with Cluster("Data Collection & Preprocessing"):
             data_factory = DataFactory("Data Factory")

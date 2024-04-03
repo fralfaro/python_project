@@ -7,10 +7,10 @@
 <img src="../../images/mermaid.png" width="600" >
 
 [Mermaid](https://mermaid.js.org/#/) es un lenguaje de
-marcado ligero para crear diagramas de flujo, organigramas, 
-diagramas de red, diagramas de Gantt y más, utilizando texto plano. 
+marcado ligero para crear diagramas de flujo, organigramas,
+diagramas de red, diagramas de Gantt y más, utilizando texto plano.
 
-Es una herramienta versátil y fácil de usar que se puede integrar en 
+Es una herramienta versátil y fácil de usar que se puede integrar en
 diferentes plataformas, como Markdown, HTML, Confluence, Jira y Visual Studio Code.
 
 **Beneficios de usar Mermaid**
@@ -45,11 +45,11 @@ E --> F(End)
 <img src="../../images/diagrams.png" width="600" >
 
 [diagrams](https://diagrams.mingrammer.com/) es una biblioteca de Python que
-te permite crear diagramas de arquitectura de software y sistemas 
+te permite crear diagramas de arquitectura de software y sistemas
 de forma declarativa.
 
 En lugar de dibujarlos manualmente en herramientas como
-Visio o Lucidchart, escribes código Python que define los componentes 
+Visio o Lucidchart, escribes código Python que define los componentes
 y sus relaciones.
 
 **Beneficios de usar diagrams**

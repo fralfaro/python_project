@@ -95,4 +95,3 @@ sequenceDiagram
 ### A nivel de infraestructura
 
 <img src="../../images/azure_ds_workflow.png" width="600" >
-

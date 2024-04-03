@@ -10,8 +10,3 @@
 - Mejorar la presentación de resultados obtenidos del caso de estudio (dataset del **Titanic**).
 - Implementación de `ISSUE_TEMPLATE` y `PULL_REQUEST_TEMPLATE` en plataformas como GitHub, GitLab, entre otras, para una mejor gestión del desarrollo colaborativo.
 - Mejorar la explicación sobre la creación de entornos virtuales en Python con `Poetry`.
-
-
-
-
-
