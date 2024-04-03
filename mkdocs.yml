@@ -88,6 +88,6 @@ nav:
     - Home: index.md
     - Sobre el proyecto:
       - project/description.md
-      - Resultado 01: project\result_01.ipynb
-      - Resultado 02: project\result_02.ipynb
-      - Resultado 03: project\result_03.ipynb
+      - Resultado 01: project/result_01.ipynb
+      - Resultado 02: project/result_02.ipynb
+      - Resultado 03: project/result_03.ipynb
