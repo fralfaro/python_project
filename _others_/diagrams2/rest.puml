@@ -1,0 +1,27 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+package "Rest API" {
+class ProblemRequest {
+    - SlottingProblem data
+    - SolverParams params
+}
+
+class ProblemResponse {
+    - Sequence[SlottingResult] results
+}
+
+interface "REST Endpoint" {
+    + ProblemResponse process(ProblemRequest request)
+}
+}
+
+
+ProblemRequest -right-> "REST Endpoint": requiere
+"REST Endpoint" -right-> ProblemResponse: produce
+"REST Endpoint" --> SolverFactory: usa
+"REST Endpoint" --> MetricsFactory: usa
+
+ProblemResponse *-- SlottingResult
+@enduml

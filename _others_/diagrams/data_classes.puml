@@ -1,0 +1,56 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+package Data {
+class ForecastResult
+class ForecastProblem
+}
+
+
+class ForecastParams  {
+    - date forecast_start
+    - int forecast_weeks
+    - int test_weeks
+
+}
+note left
+initials parameters
+from process
+end note
+class ForecastData  {
+    - pd.DataFrame df
+     + {static} ForecastData fromFile(filename: os.Pathlike)
+}
+note right
+fromFile: read data
+from ".csv"
+end note
+
+class ForecastProblem  {
+    - ForecastParams params_model
+    - ForecastData data
+
+}
+note right
+minimum information to
+start model process
+end note
+
+class ForecastResult {
+    - pd.DataFrame forecast
+    - pd.DataFrame metrics
+}
+note left
+- the process
+  **requires** ForecastProblem
+- the process
+  **produces** ForecastResult
+
+end note
+
+ForecastProblem *-- ForecastParams: 1..
+ForecastProblem *-- ForecastData: 2..
+ForecastResult o-- ForecastProblem
+
+@enduml

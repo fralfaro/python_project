@@ -1,0 +1,44 @@
+@startuml
+Actor Client
+
+Client -> Endpoint: ProblemRequest
+activate Endpoint
+
+Endpoint -> "Task Queue": ProblemRequest
+activate "Task Queue"
+"Task Queue" -> Endpoint: task_id
+deactivate "Task Queue"
+Endpoint -> Client: task_id
+deactivate Endpoint
+
+...
+
+Client -> Endpoint: task_id
+activate Endpoint
+Endpoint -> "Task Queue": task_id
+activate "Task Queue"
+"Task Queue" -> Endpoint: Status: PENDING
+deactivate "Task Queue"
+Endpoint -> Client: Status: PENDING
+deactivate Endpoint
+
+...5 minutes later...
+
+"Task Queue" -> Worker: ProblemRequest
+activate Worker
+Worker -> "Task Queue": ProblemResponse
+deactivate Worker
+
+...5 minutes later...
+
+Client -> Endpoint: task_id
+activate Endpoint
+Endpoint -> "Task Queue": task_id
+activate "Task Queue"
+"Task Queue" -> Endpoint: Status: FINISHED\nProblemResponse
+deactivate "Task Queue"
+Endpoint -> Client: Status: FINISHED\nProblemResponse
+deactivate Endpoint
+"Task Queue" -> "Task Queue": Delete task
+
+@enduml

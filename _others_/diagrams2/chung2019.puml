@@ -1,0 +1,36 @@
+@startuml
+
+start
+
+partition CTBSASolver {
+
+    partition Preprocesamiento {
+        fork
+            :Demanda de cada SKU;
+        fork again
+            :Correlacion entre pares de SKU's;
+        end fork
+}
+
+    partition Clustering {
+        :Formulacion de modelo de
+        optimizacion para clusters
+        de SKU's;
+        :Aplicacion de NSGA2 para
+        resolver el modelo;
+        :Salida:
+        **n** instancias de SKU's
+        agrupados por clusters|
+    }
+
+    partition Asignacion {
+        :Clusters se asignan a
+        ubicaciones habilitadas;
+        :Salida:
+        List[SlottingResult]|
+    }
+
+}
+
+end
+@enduml

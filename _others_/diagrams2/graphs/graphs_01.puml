@@ -1,0 +1,18 @@
+@startdot
+digraph graph01 {
+node [color=Red]
+X ->{T B C}
+C ->{E}
+E ->{M,D}
+M->{C}
+T ->{B}
+B ->{D}
+D ->{G}
+G ->{D}
+
+XX ->{TT BB CMD}
+TT ->{BB}
+BB->DG
+CMD->DG
+}
+@enddot

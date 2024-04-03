@@ -1,0 +1,11 @@
+@startdot
+digraph graph01 {
+node [color=Red]
+5-> {11}
+7-> {8, 11}
+3-> {8, 10}
+11->  {2, 9, 10}
+8-> {9}
+
+}
+@enddot

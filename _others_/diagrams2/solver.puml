@@ -1,0 +1,35 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+skinparam linetype ortho
+
+package Data {
+class SlottingResult
+class SlottingProblem
+}
+
+package Solver {
+
+interface SolverParams {
+    + SlottingSolver build()
+}
+
+class RandomSolverParams implements SolverParams
+class ABCSolverParams implements SolverParams
+class CTBSASolverParams implements SolverParams
+SolverParams --> SlottingSolver: genera
+
+interface SlottingSolver {
+    + SlottingResult solve(SlottingProblem data)
+}
+
+class RandomSolver implements SlottingSolver
+class ABCSolver implements SlottingSolver
+class CTBSASolver implements SlottingSolver
+
+
+
+SlottingSolver --> SlottingResult: produce n
+SlottingSolver <-- SlottingProblem: requiere
+}
+@enduml

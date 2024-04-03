@@ -1,0 +1,19 @@
+@startsalt
+{
+Command Line Interface
+{T
+
++ slotting
+++ transform: IO Operations
++++ file2json
++++ json2file
+++ optimize: Run optimization problems
++++ random
++++ cluster
++++ nsga2
++++ etc
+++ analysis: Given a result, compute performance metrics
+
+}
+}
+@endsalt
