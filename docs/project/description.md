@@ -1,10 +1,8 @@
-# Descripción
+# Caso de estudio
 
 <img src="../../images/titanic.jpg" width="650" >
 
-
-
-## El Desafío
+## Desafío
 
 El hundimiento del [Titanic](https://en.wikipedia.org/wiki/Titanic) es uno de los naufragios más infames de la historia.
 

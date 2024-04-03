@@ -57,6 +57,9 @@ Al crear documentación de software, es importante seguir algunas mejores práct
 
 ##  MkDocs
 
+<img src="../../images/mkdocs.png" width="300" >
+
+
 ### Introducción
 [MkDocs](https://squidfunk.github.io/mkdocs-material/) es un generador de sitios web estáticos que facilita la creación de documentación de software utilizando Markdown. MkDocs proporciona una serie de herramientas para crear una documentación completa y profesional:
 

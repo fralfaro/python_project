@@ -32,6 +32,9 @@ Se basa en ejecutar el código de manera controlada para verificar que se compor
 
 ## Pytest
 
+<img src="../../images/pytest.png" width="300" >
+
+
 ### Introducción
 
 [pytest](https://docs.pytest.org/en/8.0.x/) es un marco de trabajo de pruebas de software para Python. Facilita la escritura de pruebas unitarias, pruebas de integración y pruebas de aceptación. pytest se basa en la idea de "descubrimiento de pruebas", lo que significa que busca automáticamente archivos y funciones con nombres específicos para ejecutar las pruebas.
