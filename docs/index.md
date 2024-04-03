@@ -3,10 +3,10 @@
 <img src="https://images.viblo.asia/35852bff-d14e-457f-b562-00db7c0494cb.png" width="500" >
 
 
-Structuring your data science project according to established standards is paramount to ensure seamless collaboration 
+Structuring your data science project according to established standards is paramount to ensure seamless collaboration
 and facilitate the maintenance and modification of your work by team members.
 
-This repository offers a comprehensive example crafted to embrace industry best practices, 
+This repository offers a comprehensive example crafted to embrace industry best practices,
 aimed at enabling the creation of a data science project that is not only robust but also highly reproducible.
 
 ## About repository structure
@@ -65,9 +65,9 @@ Where:
 
 ## Tools used in this project
 
-In this project, we've utilized a variety of 
-powerful tools and libraries to enhance our data 
-science workflow and maintain code quality. 
+In this project, we've utilized a variety of
+powerful tools and libraries to enhance our data
+science workflow and maintain code quality.
 
 Here are some similar examples for the
 packages you've mentioned, along with relevant
@@ -108,4 +108,3 @@ articles or documentation:
 9. **Pytest (Testing):**
      - Pytest is used for writing and running tests.
      - Documentation: [Pytest Documentation](https://docs.pytest.org/en/latest/)
-

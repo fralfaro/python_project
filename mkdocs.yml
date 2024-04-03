@@ -1,5 +1,3 @@
-# Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
-
 # Project information
 site_name: Data Science Project
 site_url: https://github.com/fralfaro/python_project
@@ -10,7 +8,6 @@ site_description:
 repo_name: fralfaro/python_project
 repo_url: https://github.com/fralfaro/python_project
 edit_uri: ''
-
 
 # Markdown extensions
 markdown_extensions:
@@ -82,10 +79,16 @@ extra:
 
 # Plugins
 plugins:
+  - mkdocs-jupyter:
+      kernel_name: python3
   - search
 
 # TOC
 nav:
     - Home: index.md
-    - description.md
-
+    - Sobre el proyecto:
+      - project/description.md
+      - Principales Resultados:
+          - project\experiment_01.ipynb
+          - project\experiment_02.ipynb
+          - project\experiment_03.ipynb

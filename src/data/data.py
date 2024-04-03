@@ -3,6 +3,7 @@ import os
 import sqlite3
 import pandas as pd
 
+
 class TitanicData:
     @staticmethod
     def from_file(path_layout: os.PathLike) -> pd.DataFrame:

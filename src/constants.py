@@ -6,18 +6,20 @@ Const: Constants, flags, warnings and error messages.
 This module contains all the constants values used in the package.
 """
 
+
 class LGBMClassifierParams:
     params = {
-        'boosting_type': 'gbdt',
-        'objective': 'binary',
-        'metric': 'binary_logloss',
-        'num_leaves': 31,
-        'learning_rate': 0.05,
-        'feature_fraction': 0.8,
-        'bagging_fraction': 0.8,
-        'bagging_freq': 5,
-        'verbose': 0
+        "boosting_type": "gbdt",
+        "objective": "binary",
+        "metric": "binary_logloss",
+        "num_leaves": 31,
+        "learning_rate": 0.05,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 5,
+        "verbose": 0,
     }
+
 
 class TITANICSchemaCSV:
     """

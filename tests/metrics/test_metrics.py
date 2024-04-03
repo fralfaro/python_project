@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from src.metrics.metrics import evaluate_classification
 
+
 # Define una función de test
 def test_evaluate_classification():
     # Datos de ejemplo para el test
@@ -12,8 +13,8 @@ def test_evaluate_classification():
 
     # Asegúrate de que la salida sea la esperada
     assert isinstance(evaluation_metrics, dict)
-    assert 'Accuracy' in evaluation_metrics
-    assert 'Precision' in evaluation_metrics
-    assert 'Recall' in evaluation_metrics
-    assert 'F1 Score' in evaluation_metrics
-    assert 'Confusion Matrix' in evaluation_metrics
+    assert "Accuracy" in evaluation_metrics
+    assert "Precision" in evaluation_metrics
+    assert "Recall" in evaluation_metrics
+    assert "F1 Score" in evaluation_metrics
+    assert "Confusion Matrix" in evaluation_metrics

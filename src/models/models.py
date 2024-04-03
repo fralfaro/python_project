@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from sklearn.ensemble import RandomForestClassifier
 
+
 def apply_random_forest(X_train, y_train, X_test):
     """
     Aplica un modelo de Random Forest entrenado a un conjunto de datos de prueba.
