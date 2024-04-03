@@ -6,9 +6,9 @@
 [![codecov](https://codecov.io/gh/fralfaro/python_project/branch/main/graph/badge.svg)](https://codecov.io/gh/fralfaro/python_project)
 <a href="https://fralfaro.github.io/python_project/"><img alt="Link a la Documentación" src="https://img.shields.io/badge/📖 docs-link-brightgreen"></a>
 
-<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/linters-black%20ruff-black"></a>
-<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/testing-pytest-black"></a>
-<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/documentation-sphinx-black"></a>
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/🔦 linters-black|ruff-black"></a>
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/🔍 testing-pytest-black"></a>
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/📕 documentation-mkdocs-black"></a>
 
 <img src="docs/images/python2.png" width="500" >
 
