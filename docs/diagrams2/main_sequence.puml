@@ -1,0 +1,43 @@
+@startuml
+
+start
+
+split
+    partition LecturaInput {
+        split
+            :Layout;
+        split again
+            :Ordenes de Compra;
+        split again
+            :SKU's;
+        end split
+
+        :Salida: SlottingProblem|
+
+    }
+split again
+    partition SolverBuilder {
+        :Procesar Parametros Solver;
+
+        :SolverParams.build()|
+
+        :Salida: SlottingSolver|
+    }
+end split
+
+partition SolverRunner {
+    :slottingSolver.solve(problem);
+    :Salida: Sequence[SlottingResult]|
+}
+
+partition Metrics {
+    fork
+        :Distancia;
+    fork again
+        :Atochamiento;
+    fork again
+        :...;
+    end fork
+}
+stop
+@enduml

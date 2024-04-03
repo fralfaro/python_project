@@ -1,0 +1,38 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+
+interface SolverParams
+note left
+Interface that define
+model parameters
+(as appropriate)
+end note
+
+class SMAParams implements SolverParams
+class ConstantParams implements SolverParams
+
+class SolverFactory {
+    + ForecastSolver buildSolver(SolverParams params)
+}
+
+interface ForecastSolver {
+    - ForecastProblem forecast_problem
+
+}
+note right
+Interface that define
+model algorithm
+(as appropriate)
+end note
+
+class SMAModel implements ForecastSolver
+class ConstantModel implements ForecastSolver
+
+SolverFactory --> ForecastSolver: builds
+SolverFactory --> SolverParams: requieres
+
+ForecastSolver --> ForecastResult: produces
+ForecastSolver <-- ForecastProblem: requieres
+@enduml

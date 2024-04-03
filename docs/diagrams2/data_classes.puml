@@ -1,0 +1,100 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+interface Slot {
+    + bool contains(SKU sku)
+    + void put(SKU sku)
+    + bool can_allocate(SKU sku)
+}
+
+class SimpleSlot implements Slot {
+    - Optional[SKU] sku_id
+    - List[float] dimensiones
+}
+class CompositeSlot implements Slot {
+    - Slot[] slots
+    - List[float] dimensiones
+}
+CompositeSlot o-- Slot: 1..*
+
+class Gondola {
+    - List[Slot] slots
+}
+Gondola *-- Slot: 1..*
+
+enum Direccion {
+    ASCENDENTE
+    DESCENDENTE
+    AMBAS
+}
+
+class Pasillo {
+    - int id
+    - Optional[Gondola] gondola_izq
+    - Optional[Gondola] gondola_der
+    - float ancho
+    - float largo
+    - Direccion direccion
+}
+Pasillo *-- Gondola: 1..2
+Pasillo -- Direccion
+
+class Layout {
+    - Dict[int, Pasillo] pasillos
+    - Dict[int, Set[Tuple[int, float]]] adyacencia
+
+
+    + {static} Layout fromFile(filename: os.Pathlike,skus: Dict[int, SKU])
+}
+
+Layout  *-- Pasillo: 1..*
+
+enum Routing {
+
+    S_SHAPE
+    RETURN
+    LARGEST_GAP
+    MIDPOINT
+}
+
+class OrdenTrabajo {
+    - Set[int] sku_ids
+
+    + {static} Generator[OrdenTrabajo] fromFile(filename: os.Pathlike)
+}
+class SKU {
+    - int id
+    - int apilabilidad
+    - float peso
+    - List[float] dimensiones
+
+    + {static} Generator[SKU] fromFile(filename: os.Pathlike)
+}
+
+class SlottingProblem {
+    - List[SKU] skus
+    - Layout layout
+    - List[OrdenTrabajo] ordenes_trabajo
+    - Routing routing
+
+    + {static} SlottingProblem fromDirectory(path: os.Pathlike)
+}
+
+SlottingProblem *-- Layout
+SlottingProblem *-- SKU: 1..*
+SlottingProblem *-- OrdenTrabajo : 1..*
+SlottingProblem *-- Routing
+
+SKU <.. Slot: Contenedor de SKU's
+SKU <.. OrdenTrabajo: Dependencia con ids
+
+class SlottingResult {
+    - Layout layout
+    - float processTime
+}
+
+SlottingResult o-- Layout
+
+
+@enduml

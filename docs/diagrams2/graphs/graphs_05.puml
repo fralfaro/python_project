@@ -1,0 +1,11 @@
+@startdot
+digraph graph01 {
+node [color=Red]
+11->{12, 21}
+12->{22}
+21->{31}
+22->{21, 32}
+31->{32}
+
+}
+@enddot
