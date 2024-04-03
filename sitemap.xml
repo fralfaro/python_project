@@ -6,7 +6,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/python_project/_others_/diagrams2/servicio_web_de_slotting/</loc>
+         <loc>https://github.com/fralfaro/python_project/python_diagrams/</loc>
+         <lastmod>2024-04-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_project/to_do/</loc>
          <lastmod>2024-04-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -56,6 +61,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/fralfaro/python_project/project/intro/</loc>
+         <lastmod>2024-04-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/fralfaro/python_project/project/result_01/</loc>
          <lastmod>2024-04-03</lastmod>
          <changefreq>daily</changefreq>
@@ -67,6 +77,16 @@
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_project/project/result_03/</loc>
+         <lastmod>2024-04-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_project/project/tips/</loc>
+         <lastmod>2024-04-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_project/project/working/</loc>
          <lastmod>2024-04-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
