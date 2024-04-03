@@ -7,7 +7,7 @@
 
 Un pipeline en Machine Learning (ML) es una secuencia de pasos
 que automatiza el proceso completo de aprendizaje automático,
-desde la carga de datos hasta la evaluación del modelo final. 
+desde la carga de datos hasta la evaluación del modelo final.
 
 En otras palabras, un pipeline agrupa las diferentes etapas del proceso de ML en un flujo de trabajo único y eficiente.
 

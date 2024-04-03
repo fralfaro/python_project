@@ -6,12 +6,12 @@
 
 ### Documentación de software
 
-La documentación de software es cualquier 
+La documentación de software es cualquier
 tipo de información escrita o visual que describe el diseño, funcionamiento,
 uso y mantenimiento de un sistema de software. Su objetivo principal es facilitar
 la comprensión del software y su funcionamiento tanto para los desarrolladores como para los usuarios finales.
 
-### Importancia 
+### Importancia
 
 La documentación de software es fundamental por varias razones:
 
@@ -39,7 +39,7 @@ La documentación de software puede clasificarse en varios tipos, dependiendo de
 
 5. **Documentación de Código:** Incluye comentarios en el código fuente que explican su funcionamiento, propósito y cualquier otro detalle relevante para los desarrolladores que trabajan en el código.
 
-### Mejores Prácticas 
+### Mejores Prácticas
 
 Al crear documentación de software, es importante seguir algunas mejores prácticas:
 
@@ -57,7 +57,7 @@ Al crear documentación de software, es importante seguir algunas mejores práct
 
 ##  MkDocs
 
-### Introducción 
+### Introducción
 [MkDocs](https://squidfunk.github.io/mkdocs-material/) es un generador de sitios web estáticos que facilita la creación de documentación de software utilizando Markdown. MkDocs proporciona una serie de herramientas para crear una documentación completa y profesional:
 
 **1. Plantillas:**
@@ -98,4 +98,3 @@ MkDocs se integra fácilmente con Git, lo que te permite versionar tu documentac
 * **Extensibilidad:** MkDocs tiene una gran colección de extensiones que te permiten añadir nuevas funcionalidades a tu sitio web.
 * **Escalabilidad:** MkDocs se puede utilizar para crear sitios web de documentación de cualquier tamaño y complejidad.
 * **Gratuito y de código abierto:** MkDocs es una herramienta gratuita y de código abierto, lo que significa que puedes utilizarla y modificarla sin restricciones.
-

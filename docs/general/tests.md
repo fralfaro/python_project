@@ -2,10 +2,10 @@
 
 <img src="../../images/tests.png" width="800" >
 
-## Introducción 
+## Introducción
 
 El testing, o pruebas de software,
-es un proceso fundamental para garantizar la calidad y confiabilidad del software. 
+es un proceso fundamental para garantizar la calidad y confiabilidad del software.
 Se basa en ejecutar el código de manera controlada para verificar que se comporta según lo esperado y detectar errores o fallos.
 
 ### Tipos de Testing

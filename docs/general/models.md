@@ -4,9 +4,9 @@
 
 ## Introducción
 
-Los modelos de Machine Learning son algoritmos que aprenden patrones y relaciones a partir de datos 
-para realizar tareas específicas sin necesidad de ser explícitamente programados. Estos modelos 
-pueden ser utilizados para realizar predicciones, clasificaciones, 
+Los modelos de Machine Learning son algoritmos que aprenden patrones y relaciones a partir de datos
+para realizar tareas específicas sin necesidad de ser explícitamente programados. Estos modelos
+pueden ser utilizados para realizar predicciones, clasificaciones,
 clustering, y otras tareas basadas en los datos.
 
 ## Tipos de modelos
@@ -54,7 +54,7 @@ El **Reinforcement Learning** es un tipo de aprendizaje automático en el que un
 * **TensorFlow:** Potente framework para deep learning.
 * **PyTorch:** Otra opción popular para deep learning.
 
-## Almacenamiento de modelos 
+## Almacenamiento de modelos
 
 * **Serialización:** Guardar el modelo en un archivo como JSON, pickle o h5py.
 * **Bases de datos:** Almacenar el modelo en una base de datos SQL o NoSQL.
@@ -82,4 +82,3 @@ with open('model.pkl', 'wb') as f:
 with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
 ```
-

@@ -4,8 +4,8 @@
 
 ## Introducción
 
-La estructura de carpetas para un proyecto de Machine Learning (ML) 
-con Python juega un papel crucial en la organización y la legibilidad del código. 
+La estructura de carpetas para un proyecto de Machine Learning (ML)
+con Python juega un papel crucial en la organización y la legibilidad del código.
 
 A continuación, se presenta una estructura de carpetas recomendada:
 
@@ -44,7 +44,7 @@ src/
 Además de la organización de la carpeta `src`, es importante seguir algunas buenas prácticas al escribir código Python en este contexto:
 
 - **Seguir los Principios SOLID**: Aplicar los principios de diseño SOLID (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion) para escribir código modular y flexible.
-  
+
 - **Nombrar Conveniente**: Utilizar nombres descriptivos y significativos para variables, funciones y clases que reflejen su propósito y funcionalidad.
 
 - **Documentar el Código**: Incluir comentarios claros y documentación en el código para explicar su funcionamiento, así como el propósito de las funciones y clases.
@@ -54,4 +54,3 @@ Además de la organización de la carpeta `src`, es importante seguir algunas bu
 - **Utilizar Pruebas Unitarias**: Escribir pruebas unitarias para todas las funciones y clases del código para garantizar su correcto funcionamiento y detectar errores de forma temprana.
 
 - **Gestionar las Dependencias**: Utilizar herramientas de gestión de dependencias, como Poetry o Pipenv, para gestionar las dependencias del proyecto y garantizar la reproducibilidad del entorno de desarrollo.
-

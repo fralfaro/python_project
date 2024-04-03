@@ -5,7 +5,7 @@
 ## Estructura Propuesta
 
 La estructura de proyecto propuesta sigue una organización cuidadosamente planificada para facilitar
-el desarrollo, la colaboración y la mantenibilidad del proyecto. 
+el desarrollo, la colaboración y la mantenibilidad del proyecto.
 
 ```
 ├───.github
@@ -25,7 +25,7 @@ el desarrollo, la colaboración y la mantenibilidad del proyecto.
 │   ├───models
 │   └───metrics
 ├───tests
-│ 
+│
 ├───.gitignore
 ├───.pre-commit-config.yaml
 ├───LICENSE
@@ -46,7 +46,7 @@ el desarrollo, la colaboración y la mantenibilidad del proyecto.
       * `metrics`: Carpeta con las funciones de evaluación de modelos ML.
 * **tests**: Contiene archivos de pruebas unitarias y de integración para el código fuente del proyecto, organizados en subcarpetas según la funcionalidad a la que se refieren, como `data`, `metrics`, `models` y `preprocessing`. También contiene la carpeta `__pycache__` que almacena archivos de caché de las pruebas.
 * **models**: Almacena modelos de aprendizaje automático entrenados durante el proyecto.
-* **data**: Carpeta con los  datos utilizados en el proyecto, divididos en subcarpetas según su estado de procesamiento: 
+* **data**: Carpeta con los  datos utilizados en el proyecto, divididos en subcarpetas según su estado de procesamiento:
       * `raw`: carpeta para los datos sin procesar.
       * `procesed`: carpeta para los datos procesados .
       * `final`: carpeta para los datos finales.
@@ -62,4 +62,3 @@ el desarrollo, la colaboración y la mantenibilidad del proyecto.
 * **poetry.lock**: Generado por Poetry, gestor de dependencias de Python, contiene una lista precisa de todas las dependencias y sus versiones exactas para garantizar la consistencia en diferentes entornos.
 * **pyproject.toml**: Configuración de Poetry para definir información del proyecto, dependencias, opciones de empaquetado y otras configuraciones relacionadas.
 * **README.md**: Principal archivo de markdown del proyecto que proporciona una descripción general, instrucciones de instalación, ejemplos de uso y otra información relevante para los usuarios y colaboradores.
-
