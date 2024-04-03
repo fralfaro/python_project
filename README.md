@@ -9,9 +9,9 @@
 <a href="https://github.com/pytest-dev/pytest"><img alt="Code style: black" src="https://img.shields.io/badge/🧪 testing-pytest-black"></a>
 <a href="https://github.com/squidfunk/mkdocs-material"><img alt="Code style: black" src="https://img.shields.io/badge/📗 documentation-mkdocs-black"></a>
 
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 ![PyPI - Python Version](https://img.shields.io/badge/python-3.10-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 <img src="docs/images/python2.png" width="500" >
 
