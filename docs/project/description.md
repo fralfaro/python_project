@@ -26,10 +26,10 @@ Los datos se han dividido en dos grupos:
 
 
 
-**The training set** debe usarse para construir tus modelos de aprendizaje automático. Para el conjunto de entrenamiento, proporcionamos el resultado (también conocido como "verdad absoluta") para cada pasajero. Tu modelo se basará en "características" como el género y la clase de los pasajeros. También puedes usar [ingeniería de características](https://triangleinequality.wordpress.com/2013/09/08/basic-feature-engineering-with-the-titanic-data/) para crear nuevas características.
+El **training set** debe usarse para construir tus modelos de aprendizaje automático. Para el conjunto de entrenamiento, proporcionamos el resultado (también conocido como "verdad absoluta") para cada pasajero. Tu modelo se basará en "características" como el género y la clase de los pasajeros. También puedes usar [ingeniería de características](https://triangleinequality.wordpress.com/2013/09/08/basic-feature-engineering-with-the-titanic-data/) para crear nuevas características.
 
 
-**The test set** debe usarse para ver qué tan bien funciona tu modelo en datos invisibles. Para el conjunto de prueba, no proporcionamos la verdad absoluta para cada pasajero. Es tu trabajo predecir estos resultados. Para cada pasajero en el conjunto de prueba, usa el modelo que entrenaste para predecir si sobrevivieron o no al hundimiento del Titanic.
+El **test set** debe usarse para ver qué tan bien funciona tu modelo en datos invisibles. Para el conjunto de prueba, no proporcionamos la verdad absoluta para cada pasajero. Es tu trabajo predecir estos resultados. Para cada pasajero en el conjunto de prueba, usa el modelo que entrenaste para predecir si sobrevivieron o no al hundimiento del Titanic.
 
 También incluimos **gender\_submission.csv**, un conjunto de predicciones que asumen que todas y solo las pasajeras mujeres sobreviven, como un ejemplo de cómo debería ser un archivo de envío.
 
@@ -52,22 +52,20 @@ También incluimos **gender\_submission.csv**, un conjunto de predicciones que a
 
 ### Variable Notes
 
-**pclass**: Un proxy para el estatus socioeconómico (SES)
+* **pclass**: Un proxy para el estatus socioeconómico (SES)
+      * 1st = Upper
+      * 2nd = Middle
+      * 3rd = Lower
 
-* 1st = Upper
-* 2nd = Middle
-* 3rd = Lower
+* **age**: La edad es fraccionaria si es menor que 1. Si la edad se estima, está en forma de xx.5
 
-**age**: La edad es fraccionaria si es menor que 1. Si la edad se estima, está en forma de xx.5
+* **sibsp**: El conjunto de datos define las relaciones familiares de la siguiente manera...
+      * Sibling = brother, sister, stepbrother, stepsister
+      * Spouse = husband, wife (amantes y prometidos fueron ignorados)
 
-**sibsp**: El conjunto de datos define las relaciones familiares de la siguiente manera...
-
-* Sibling = brother, sister, stepbrother, stepsister
-* Spouse = husband, wife (amantes y prometidos fueron ignorados)
-
-**parch**: El conjunto de datos define las relaciones familiares de la siguiente manera...
-* Parent =madre, padre
-* Child = daughter, son, stepdaughter, stepson
-* Algunos niños viajaron solo con una niñera, por lo tanto, parch=0 para ellos.
+* **parch**: El conjunto de datos define las relaciones familiares de la siguiente manera...
+     * Parent = madre, padre
+     * Child = daughter, son, stepdaughter, stepson
+     * Algunos niños viajaron solo con una niñera, por lo tanto, parch=0 para ellos.
 
 > 🔑 **Nota**: Para obtener más detalles sobre el proyecto, consulta la [documentación de Kaggle](https://www.kaggle.com/c/titanic/overview) sobre el desafío del Titanic.

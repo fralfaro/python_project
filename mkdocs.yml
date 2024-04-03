@@ -86,8 +86,19 @@ plugins:
 # TOC
 nav:
     - Home: index.md
+    - Sobre el repositorio:
+      - general/intro.md
+      - general/tips.md
+      - Carpetas y Archivos:
+          - general/src.md
+          - general/tests.md
+          - general/models.md
+          - general/data.md
+          - general/pipeline.md
+          - general/docs.md
     - Sobre el proyecto:
       - project/description.md
-      - Resultado 01: project/result_01.ipynb
-      - Resultado 02: project/result_02.ipynb
-      - Resultado 03: project/result_03.ipynb
+      - Principales Resultados:
+          - Resultado 01: project/result_01.ipynb
+          - Resultado 02: project/result_02.ipynb
+          - Resultado 03: project/result_03.ipynb
