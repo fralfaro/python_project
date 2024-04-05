@@ -2,7 +2,7 @@
 name = "src"
 version = "0.1.0"
 description = "Python Project Baseline (Data Science)"
-authors = ["Francisco Alfaro <francisco.alfaro@security.cl>"]
+authors = ["Francisco Alfaro <francisco.alfaro.496@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
