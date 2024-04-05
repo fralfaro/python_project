@@ -37,12 +37,13 @@ extra_javascript:
 # Theme
 theme:
   name: material
-  language: en
+  language: es
   logo: images/book.svg
   favicon: images/python.svg
   features:
     - navigation.instant
     - navigation.top
+    - navigation.footer
     - content.code.annotate
     - search.suggest
     - search.highlight

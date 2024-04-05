@@ -26,6 +26,7 @@ el desarrollo, la colaboración y la mantenibilidad del proyecto.
 │   └───metrics
 ├───tests
 │
+├───.env
 ├───.gitignore
 ├───.pre-commit-config.yaml
 ├───LICENSE
@@ -55,6 +56,7 @@ el desarrollo, la colaboración y la mantenibilidad del proyecto.
 
 ### Archivos
 
+* **.env**: Archivo de configuración que se utilizan comúnmente en el desarrollo de software para almacenar variables de entorno.
 * **.gitignore**: Archivo para especificar qué archivos y carpetas no deben ser rastreados por Git, como archivos binarios o locales y otros generados automáticamente que no deben compartirse.
 * **.pre-commit-config.yaml**: Configura ganchos pre-commit para ejecutarse automáticamente antes de cada confirmación en Git, usando la herramienta `pre-commit`.
 * **LICENSE**: Contiene los términos y condiciones de la licencia del proyecto, especificando cómo se puede utilizar, distribuir y modificar el código y otros recursos.
@@ -62,3 +64,30 @@ el desarrollo, la colaboración y la mantenibilidad del proyecto.
 * **poetry.lock**: Generado por Poetry, gestor de dependencias de Python, contiene una lista precisa de todas las dependencias y sus versiones exactas para garantizar la consistencia en diferentes entornos.
 * **pyproject.toml**: Configuración de Poetry para definir información del proyecto, dependencias, opciones de empaquetado y otras configuraciones relacionadas.
 * **README.md**: Principal archivo de markdown del proyecto que proporciona una descripción general, instrucciones de instalación, ejemplos de uso y otra información relevante para los usuarios y colaboradores.
+
+## Aclaraciones sobre la estructura de carpetas
+
+### Sobre los archivos y carpetas
+
+**Carpeta `data`:**
+
+* La carpeta `data` contiene una referencia del trabajo en local de los datos.
+* Se recomienda **no versionar** los archivos dentro de esta carpeta.
+* En su lugar, se sugiere utilizar herramientas de gestión de datos como **DVC** o **Git LFS** para versionar y controlar las modificaciones a los conjuntos de datos.
+
+**Archivo `.env`:**
+
+* El archivo `.env` contiene variables de entorno sensibles o específicas del entorno local, como claves de API o rutas de acceso a archivos.
+* **No se debe versionar** este archivo en el repositorio de código, ya que podría exponer información confidencial o generar errores en otros entornos.
+* Se recomienda utilizar herramientas como dotenv o python-dotenv para cargar las variables de entorno desde un archivo `.env` al ejecutar el código del proyecto.
+* **Alternativas:**
+    * **Herramientas de gestión de secretos**: Almacenar las variables de entorno en un servicio de gestión de secretos como *Azure Key Vault*, *Google Cloud Secret Manager*, *AWS Secrets Manager*.
+    * **Entornos virtuales**: Crear diferentes entornos virtuales para cada tipo de entorno (desarrollo, producción, etc.) con sus propias variables de entorno específicas.
+
+
+### Consideraciones adicionales
+
+* La estructura de carpetas propuesta es una guía flexible que puede adaptarse a las necesidades específicas de cada proyecto.
+* Se recomienda revisar y actualizar la estructura de carpetas a medida que el proyecto avanza y las necesidades cambian.
+* Es importante mantener la documentación actualizada con información sobre la estructura de carpetas, las herramientas utilizadas y las prácticas recomendadas para el desarrollo del proyecto.
+* Si el proyecto se desarrolla en equipo, es importante establecer reglas claras sobre la gestión de archivos, la versionación del código y la configuración del entorno de desarrollo.

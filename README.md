@@ -25,7 +25,7 @@ para abrazar las mejores prácticas de la industria, con
 el objetivo de permitir la creación de un proyecto de ciencia
 de datos que no solo sea robusto, sino también altamente reproducible.
 
-Los objetivos de este proyectos son dos:
+Los objetivos de este proyectos son:
 
 * Estructura de carpetas
 * Presentación de resultados
